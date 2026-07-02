@@ -259,7 +259,7 @@
 
   <!-- SCREEN 1: COVER -->
   <section class="screen active" id="screen-cover">
-    <div class="eyebrow">44 years of lovely, beautiful, brilliant, compassionate you</div>
+    <div class="eyebrow">43 years of lovely, beautiful, brilliant, compassionate you</div>
     <svg class="bear-couple" viewBox="0 0 240 190" xmlns="http://www.w3.org/2000/svg">
       <!-- bear 1 -->
       <g id="bearL">
@@ -301,7 +301,7 @@
   <!-- SCREEN 2: CAKE -->
   <section class="screen" id="screen-cake">
     <h2 id="cakeTitle">Make a wish, Sara!</h2>
-    <p class="hint">All 44 candles — tap each one, or blow them out together 🕯️</p>
+    <p class="hint">All 43 candles — tap each one, or blow them out together 🕯️</p>
     <div class="candle-field" id="candleField"></div>
     <div class="cake-wrap">
       <svg viewBox="0 0 220 160" width="100%" xmlns="http://www.w3.org/2000/svg">
@@ -316,7 +316,7 @@
         <circle cx="158" cy="82" r="6" fill="#FFC75F"/>
       </svg>
     </div>
-    <p class="hint small" id="candleCounter">44 candles left</p>
+    <p class="hint small" id="candleCounter">43 candles left</p>
     <button class="blow-btn" onclick="blowAll()">Blow them all out 🌬️</button>
   </section>
 
@@ -334,10 +334,11 @@
 
   <!-- SCREEN 4: FINALE -->
   <section class="screen" id="screen-finale">
-    <h1>Happy 44th Birthday,</h1>
+    <h1>Happy 43rd Birthday,</h1>
     <input class="name-input" id="nameInput" value="Sara" maxlength="16" onclick="this.select()">
     <p>Here's to the woman who is lovely, beautiful, brilliant, and compassionate<br>— and somehow, still, my favorite person to come home to.</p>
     <p style="margin-top:14px; font-size:1.4rem;">🐻💕🐻</p>
+    <p style="margin-top:16px; font-size:0.95rem; opacity:0.85;">With love,<br>Dave-o</p>
     <button class="replay" onclick="restart()">watch it again ↻</button>
   </section>
 
@@ -397,7 +398,7 @@
   }
 
   /* ---------- candle logic ---------- */
-  const TOTAL_CANDLES = 44;
+  const TOTAL_CANDLES = 43;
   const CANDLE_COLORS = ['#A8D5BA','#FF8FAB','#FFC75F','#FFD9E3'];
   let candlesLeft = TOTAL_CANDLES;
 
@@ -471,11 +472,11 @@
 
   /* ---------- messages carousel ---------- */
   const messages = [
-    {icon:'💐', title:'Lovely', body:"44 years old and somehow more radiant with every single one."},
+    {icon:'💐', title:'Lovely', body:"43 years old and somehow more radiant with every single one."},
     {icon:'🧠', title:'Brilliant', body:"Your mind still amazes me — how you think, question, and light up a room with one idea."},
     {icon:'🤍', title:'Compassionate', body:"You care for everyone around you like it's the easiest thing in the world. It isn't. You just make it look that way."},
     {icon:'💍', title:'My wife', body:"Out of everyone, you picked me. I still can't believe my luck."},
-    {icon:'🎉', title:'Happy 44th, Sara', body:"Here's to another trip around the sun with the most lovely, beautiful, brilliant, compassionate woman I know."}
+    {icon:'🎉', title:'Happy 43rd, Sara', body:"Here's to another trip around the sun with the most lovely, beautiful, brilliant, compassionate woman I know."}
   ];
   let msgIndex = 0;
 
