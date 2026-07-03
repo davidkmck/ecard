@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#FFF6ED; 
+    --cream:#FFF6ED;
     --blush:#FFD9E3;
     --coral:#FF8FAB;
     --sage:#A8D5BA;
@@ -93,19 +93,17 @@
 
   .darkness-overlay{
     position:absolute; inset:0;
-    background: radial-gradient(circle at 50% 28%, rgba(58,40,58,0.5) 0%, rgba(20,13,22,0.78) 75%);
+    background: radial-gradient(circle at 50% 28%, rgba(45,30,45,0.72) 0%, rgba(12,8,14,0.92) 65%, rgba(6,4,8,0.96) 100%);
     opacity:0;
     pointer-events:none;
-    transition: opacity 1.1s ease;
+    transition: opacity 1.6s ease;
   }
   .darkness-overlay.active{ opacity:1; }
   .darkness-overlay.flash{ animation: overlay-flash 2.6s ease-in-out 1; }
   @keyframes overlay-flash{
     0%, 100%{ filter: brightness(1); }
-    10%{ filter: brightness(1.6); }
-    16%{ filter: brightness(1); }
-    22%{ filter: brightness(1.45); }
-    28%{ filter: brightness(1); }
+    12%{ filter: brightness(1.15); }
+    18%{ filter: brightness(1); }
   }
   .balloon{
     position:absolute;
@@ -409,7 +407,7 @@
   <section class="screen" id="screen-finale">
     <h1>Happy 43rd Birthday,</h1>
     <input class="name-input" id="nameInput" value="Sara" maxlength="16" onclick="this.select()">
-    <p>Here's to the woman who is lovely, beautiful, brilliant, and compassionate<br>— and somehow, still, my favorite person to come home to.</p>
+    <p>Here's to the woman who is lovely, beautiful, brilliant, compassionate<br>and... <span style="color:var(--coral); font-family:'Fredoka', sans-serif; font-weight:600;">HOT!</span><br>— and somehow, still, my favorite person.</p>
     <p style="margin-top:14px; font-size:1.4rem;">🐱💕🐱</p>
     <p style="margin-top:16px; font-size:0.95rem; opacity:0.85;">With love,<br>Dave-o</p>
     <p style="margin-top:14px; font-size:0.9rem; color:var(--coral); font-weight:600;">P.S. save some energy for later tonight 😉</p>
@@ -550,7 +548,7 @@
     {icon:'🧠', title:'Brilliant', body:"You have this way of taking on the hardest, most impossible-looking stuff — and then just quietly knocking it out of the park."},
     {icon:'🤍', title:'Compassionate', body:"Kids, animals, strangers having a bad day — you notice, and you show up for them, every time. It isn't easy. You just make it look that way."},
     {icon:'💍', title:'My wife', body:"Out of everyone, you picked me. I still can't believe my luck."},
-    {custom:true, kind:'storm', title:'Stormy days too', body:"You've got thunder in you sometimes — lightning and all. I wouldn't trade a single flash of it, because it's just part of loving all of you."},
+    {custom:true, kind:'storm', title:'Stormy days too', body:"Sometimes it's quiet — no thunder, just a stillness that settles over the room. I see it, and I stay anyway. That's part of loving all of you too."},
     {custom:true, kind:'sun', title:'Then the sun comes out', body:"And just like that — sunshine, flowers, and that smile that makes everything better again."},
     {icon:'✨', title:'A golden year', body:"Random insider fact: turning 43 means you're stepping into your 44th year — and 44 happens to be a golden number. Just makes it a little more fun, Sara."},
     {icon:'🎉', title:'Happy 43rd, Sara', body:"Here's to another trip around the sun with the most lovely, beautiful, brilliant, compassionate woman I know."}
